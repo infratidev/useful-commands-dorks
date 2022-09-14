@@ -18,7 +18,7 @@ for i in ./*string*;do mv -- "$i" "${i//string/replace}";done
 ### Cópia recursiva utilizando find dado uma string de pesquisa para um diretório de destino 
 
 ~~~
-for i in ./*string*;do mv -- "$i" "${i//string/replace}";done
+cp -p $(find ./* -name '*string*') dir/
 ~~~
 
 
