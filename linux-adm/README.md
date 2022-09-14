@@ -15,7 +15,11 @@ grep -rl 'String' ./* | xargs sed -i 's/String/Replace/g'
 for i in ./*string*;do mv -- "$i" "${i//string/replace}";done
 ~~~
 
+### Cópia recursiva utilizando find dado uma string de pesquisa para um diretório de destino 
 
+~~~
+for i in ./*string*;do mv -- "$i" "${i//string/replace}";done
+~~~
 
 
 <br>
