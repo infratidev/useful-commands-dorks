@@ -21,6 +21,12 @@ for i in ./*string*;do mv -- "$i" "${i//string/replace}";done
 cp -p $(find ./* -name '*string*') dir/
 ~~~
 
+### Instanciando um servidor web em python na porta 80
+
+~~~
+python3 -m http.server 80
+~~~
+
 
 <br>
 
