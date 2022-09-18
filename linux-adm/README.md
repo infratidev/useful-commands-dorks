@@ -9,13 +9,13 @@
 grep -rl 'String' ./* | xargs sed -i 's/String/Replace/g'
 ~~~
 
-### Mover recursivamente arquivos dado uma string de pesquisa
+### Renomear arquivos dado uma string de pesquisa
 
 ~~~
 for i in ./*string*;do mv -- "$i" "${i//string/replace}";done
 ~~~
 
-### Cópia recursiva utilizando find dado uma string de pesquisa para um diretório de destino 
+### Cópia utilizando find dado uma string de pesquisa para um diretório de destino 
 
 ~~~
 cp -p $(find ./* -name '*string*') dir/
