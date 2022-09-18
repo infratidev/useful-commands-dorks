@@ -3,25 +3,25 @@
 ### 📋 infratidev
 ## Useful linux commands
 
-### Substituição recursiva com uma string de pesquisa
+### 1. Substituição recursiva com uma string de pesquisa
 
 ~~~
 grep -rl 'String' ./* | xargs sed -i 's/String/Replace/g'
 ~~~
 
-### Renomear arquivos dado uma string de pesquisa
+### 2. Renomear arquivos dado uma string de pesquisa
 
 ~~~
 for i in ./*string*;do mv -- "$i" "${i//string/replace}";done
 ~~~
 
-### Cópia utilizando find dado uma string de pesquisa para um diretório de destino 
+### 3. Cópia utilizando find dado uma string de pesquisa para um diretório de destino 
 
 ~~~
 cp -p $(find ./* -name '*string*') dir/
 ~~~
 
-### Instanciando um servidor web em python na porta 80
+### 4. Instanciando um servidor web em python na porta 80
 
 ~~~
 python3 -m http.server 80
