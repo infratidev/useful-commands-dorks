@@ -3,8 +3,9 @@
 ### 📋 infratidev
 ## Useful sec commands
 
+### 1. URL com vários dorks, etc.
 
-
+[Google-hacking-database](https://www.exploit-db.com/google-hacking-database)
 
 
 <br>
